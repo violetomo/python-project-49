@@ -7,16 +7,16 @@ from random import randint
 
 def main():
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
     correct_answers = 0
     while correct_answers <= 2:
-        number = randint(1, 100)
-        print('Question: ', number)
+        number1 = randint(1, 10)
+        number2 = randint(1, 10)
+        operations = ['+', '-', '*']
+        operation = operations[randint(0, 2)]
+        correct_answer = str(eval(str(number1) + operation + str(number2)))
+        print(f'Question: {number1} {operation} {number2}')
         answer = prompt.string('Your answer: ')
-        if number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
         if answer == correct_answer:
             print('Correct!')
             correct_answers += 1
