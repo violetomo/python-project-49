@@ -8,3 +8,5 @@ https://asciinema.org/a/8nBU2GHt17wenhHzws9uK6OVy
 https://asciinema.org/a/ggrHFdGUNYCbIIVaLDzQ0uwCP
 #asciinema brain-progression example
 https://asciinema.org/a/4mE5is7Lp0hsWpjepZXIWoHMw
+#asciinema brain-prime example
+https://asciinema.org/a/5LDWJo6gDdGS2ADe2DGJa5lCG
