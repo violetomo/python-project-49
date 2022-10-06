@@ -4,7 +4,7 @@ from random import randint
 
 def brain_even():
     number = randint(1, 100)
-    print('Question: ', number)
+    print('Question:', number)
     answer = prompt.string('Your answer: ')
     if number % 2 == 0:
         correct_answer = 'yes'

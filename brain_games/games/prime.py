@@ -4,7 +4,7 @@ from random import randint
 
 def brain_prime():
     number = randint(1, 100)
-    print('Question: ', number)
+    print('Question:', number)
     answer = prompt.string('Your answer: ')
     k = 0
     for i in range(2, number // 2 + 1):

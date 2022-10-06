@@ -9,7 +9,7 @@ def brain_progression():
     random_index = randint(0, len(cut_progression) - 1)
     correct_answer = str(cut_progression[random_index])
     cut_progression[random_index] = '..'
-    print('Question: ', " ".join(map(str, cut_progression)))
+    print('Question:', " ".join(map(str, cut_progression)))
     answer = prompt.string('Your answer: ')
     if answer == correct_answer:
         print('Correct!')
