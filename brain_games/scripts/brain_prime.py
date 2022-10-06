@@ -10,7 +10,7 @@ def main():
     correct_answers = 0
     while correct_answers <= 2:
         answer = brain_prime()
-        if answer == True:
+        if answer is True:
             correct_answers += 1
             next
         else:
