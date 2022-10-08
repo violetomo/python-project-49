@@ -1,4 +1,3 @@
-import prompt
 from random import randint
 
 
@@ -10,10 +9,4 @@ def brain_progression():
     correct_answer = str(cut_progression[random_index])
     cut_progression[random_index] = '..'
     print('Question:', " ".join(map(str, cut_progression)))
-    answer = prompt.string('Your answer: ')
-    if answer == correct_answer:
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-        return False
+    return correct_answer

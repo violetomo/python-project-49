@@ -1,4 +1,3 @@
-import prompt
 from random import randint
 
 
@@ -9,10 +8,4 @@ def brain_calc():
     operation = operations[randint(0, 2)]
     correct_answer = str(eval(str(number1) + operation + str(number2)))
     print(f'Question: {number1} {operation} {number2}')
-    answer = prompt.string('Your answer: ')
-    if answer == correct_answer:
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-        return False
+    return correct_answer
